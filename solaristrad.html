@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris Traduções</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* Cores temáticas */
+        :root {
+            --amarelo: #FFD700;
+            --preto: #000000;
+            --branco: #FFFFFF;
+        }
+
+
+        body {
+            background-color: var(--branco);
+            color: var(--preto);
+        }
+
+
+        header {
+            background-color: var(--preto);
+            color: var(--amarelo);
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+
+        nav {
+            background-color: var(--amarelo);
+        }
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+
+        nav li {
+            position: relative;
+        }
+
+
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: var(--preto);
+            font-weight: bold;
+        }
+
+
+        nav li:hover > a {
+            background-color: var(--preto);
+            color: var(--amarelo);
+        }
+
+
+        /* Submenu */
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: var(--amarelo);
+            padding: 0;
+            border-radius: 0 0 5px 5px;
+            overflow: hidden;
+            min-width: 180px;
+            z-index: 1000;
+        }
+
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+
+        nav ul ul li {
+            width: 100%;
+        }
+
+
+        nav ul ul a {
+            padding: 10px;
+            color: var(--preto);
+        }
+
+
+        nav ul ul a:hover {
+            background-color: var(--preto);
+            color: var(--amarelo);
+        }
+
+
+        main {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+
+        section {
+            margin-bottom: 60px;
+        }
+
+
+        h2 {
+            color: var(--preto);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--amarelo);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+
+        .team, .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+
+        .team-member, .service {
+            flex: 1 1 200px;
+            padding: 20px;
+            border: 2px solid var(--amarelo);
+            border-radius: 10px;
+            background-color: #fffbe6;
+            transition: transform 0.2s;
+        }
+
+
+        .team-member:hover, .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+
+        .btn-orcamento {
+            display: inline-block;
+            background-color: var(--preto);
+            color: var(--amarelo);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+
+        .btn-orcamento:hover {
+            background-color: var(--amarelo);
+            color: var(--preto);
+        }
+
+
+        footer {
+            background-color: var(--preto);
+            color: var(--amarelo);
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+
+            .team, .services {
+                flex-direction: column;
+            }
+
+
+            nav ul ul {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Solaris Traduções</h1>
+        <p>Dando vida aos textos de forma atemporal</p>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a>
+                <ul>
+                    <li><a href="#missao">Missão</a></li>
+                    <li><a href="#visao">Visão</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                </ul>
+            </li>
+            <li><a href="#sobre">Sobre Nós</a>
+                <ul>
+                    <li><a href="#equipe">Equipe</a></li>
+                </ul>
+            </li>
+            <li><a href="#servicos">Serviços</a>
+                <ul>
+                    <li><a href="#traducao-tecnica">Traduções Técnicas</a></li>
+                    <li><a href="#traducao-literaria">Traduções Literárias</a></li>
+                    <li><a href="#revisao">Revisão de Texto</a></li>
+                    <li><a href="#versao-legendagem">Versão e Legendagem</a></li>
+                </ul>
+            </li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio">
+            <h2>Missão</h2>
+            <p>Fornecer traduções de alta qualidade que conectem culturas e transmitam ideias com precisão e emoção.</p>
+
+
+            <h2 id="visao">Visão</h2>
+            <p>Ser referência no mercado de traduções, oferecendo serviços atemporais que ultrapassem barreiras linguísticas.</p>
+
+
+            <h2 id="valores">Valores</h2>
+            <p>Excelência, integridade, paixão pela linguagem, criatividade e compromisso com o cliente.</p>
+        </section>
+
+
+        <!-- Seção Sobre Nós -->
+        <section id="sobre">
+            <h2>Equipe</h2>
+            <div class="team" id="equipe">
+                <div class="team-member">
+                    <h3>Ana Souza</h3>
+                    <p>Especialista em traduções literárias e técnicas.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Bruno Lima</h3>
+                    <p>Tradutor técnico com foco em tecnologia e engenharia.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Camila Rocha</h3>
+                    <p>Revisora e especialista em linguística aplicada.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Daniel Martins</h3>
+                    <p>Tradutor de legendas e versões audiovisuais.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Elena Freitas</h3>
+                    <p>Tradutora literária e consultora cultural.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seção Serviços -->
+        <section id="servicos">
+            <h2>Serviços</h2>
+
+
+            <div class="services" id="traducao-tecnica">
+                <div class="service">
+                    <h3>Traduções Técnicas</h3>
+                    <p>Tradução precisa de documentos técnicos, manuais, relatórios e materiais especializados.</p>
+                </div>
+            </div>
+
+
+            <div class="services" id="traducao-literaria">
+                <div class="service">
+                    <h3>Traduções Literárias</h3>
+                    <p>Transmissão fiel de nuances e estilo de textos literários, mantendo a essência da obra.</p>
+                </div>
+            </div>
+
+
+            <div class="services" id="revisao">
+                <div class="service">
+                    <h3>Revisão de Texto</h3>
+                    <p>Revisão detalhada de gramática, coesão, clareza e estilo em qualquer tipo de documento.</p>
+                </div>
+            </div>
+
+
+            <div class="services" id="versao-legendagem">
+                <div class="service">
+                    <h3>Versão e Legendagem</h3>
+                    <p>Adaptação e legendagem de vídeos, filmes e apresentações audiovisuais.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Endereço:
